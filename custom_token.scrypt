@@ -1,0 +1,12 @@
+contract custom_token{
+    PubKeyHash public_key_hash;
+
+    constructor(PubKeyHash public_key_hash){
+        this.public_key_hash = public_key_hash;
+    }
+
+    public function valid(Sig signature, PubKey public_key){
+        require(hash160(public_key) == this.public_key_hash);
+        require(checkSig(signature, public_key));
+    }
+}
