@@ -1,0 +1,62 @@
+{
+    "version": 9,
+    "compilerVersion": "1.17.3+commit.b1bcb14",
+    "contract": "custom_token",
+    "md5": "9dcaaeaff5118a8138db020b51a04eee",
+    "structs": [
+        {
+            "name": "SortedItem",
+            "params": [
+                {
+                    "name": "item",
+                    "type": "T"
+                },
+                {
+                    "name": "idx",
+                    "type": "int"
+                }
+            ],
+            "genericTypes": [
+                "T"
+            ]
+        }
+    ],
+    "library": [],
+    "alias": [
+        {
+            "name": "PubKeyHash",
+            "type": "Ripemd160"
+        }
+    ],
+    "abi": [
+        {
+            "type": "function",
+            "name": "valid",
+            "index": 0,
+            "params": [
+                {
+                    "name": "signature",
+                    "type": "Sig"
+                },
+                {
+                    "name": "public_key",
+                    "type": "PubKey"
+                }
+            ]
+        },
+        {
+            "type": "constructor",
+            "params": [
+                {
+                    "name": "public_key_hash",
+                    "type": "Ripemd160"
+                }
+            ]
+        }
+    ],
+    "stateProps": [],
+    "buildType": "debug",
+    "file": "file:///c:/Users/ayush/Desktop/bc/sCrypt/custom_token.scrypt",
+    "hex": "00<public_key_hash>610079527a75517a75615179a95179876952795279ac777777",
+    "sourceMapFile": ""
+}
