@@ -1,0 +1,14 @@
+contract Counter{
+    @state
+    bytes message;
+
+    public function upload_data(SigHashPreimage txPreimage, int amount, bytes data) {
+        require(Tx.checkPreimage(txPreimage));
+
+        this.message = data;
+
+        bytes outputScript = this.getStateScript();
+        bytes output = Utils.buildOutput(outputScript, amount);
+        require(hash256(output) == SigHash.hashOutputs(txPreimage));
+    }
+}
