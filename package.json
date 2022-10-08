@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "node-fetch": "^3.2.10",
-    "npm": "^8.19.2",
-    "type": "module" 
-  }
-}
