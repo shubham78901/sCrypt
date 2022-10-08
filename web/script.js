@@ -14,7 +14,7 @@ async function fetch_api(url){
 
 // whatsonchain api for a given transaction_id 
 // let url_api = 'https://api.whatsonchain.com/v1/bsv/test/tx/hash/';
-// let txn_id = 'c3a3bb1cefd8be279334e5c3573e243e9253e9dedf0ee613d669896ded1a8ecd';
+// let txn_id = 'lucky-phoenix-0cf832';
 
 // converts hex to ascii string
 function hex2a(hexx){
